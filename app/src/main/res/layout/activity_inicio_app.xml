@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellowgreen"
+    tools:context="ec.repositoriocompartido.RecetasApp.InicioAppActivity">
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloapp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="38dp"
+        android:textColor="@color/white"
+        android:background="@color/green"
+        />
+    <ImageView
+        android:id="@+id/ivComida"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/_2395greensalad_98843"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/yellow"
+        />
+    <TextView
+        android:id="@+id/tvSubTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subTituloapp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivComida"
+        android:layout_marginLeft="78dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/lightblue"
+        android:textSize="25dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubTitulo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/yellow"
+        >
+
+        <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/finalizar"
+            android:textSize="25dp"
+            />
+
+        <Button
+            android:id="@+id/btnEmpezar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ir"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

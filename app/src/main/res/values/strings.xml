@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">AndroidMasterVIU2</string>
+    <string name="altura">Altura</string>
+    <string name="peso">Peso</string>
+    <string name="edad">Edad</string>
+    <string name="calcular">Calcular</string>
+    <string name="titulo">Canal Youtube</string>
+    <string name="subTitulo">Subtitulo canal</string>
+    <string name="categorias">Categorias</string>
+    <string name="canales">Canales</string>
+
+
+
+    <string name="tituloapp">DIETAS-APP</string>
+    <string name="subTituloapp">Bienvenido a nuestra aplicación de comida sana, donde cada plato es una celebración de sabores frescos y nutrientes que nutren tu cuerpo, alma y mente</string>
+    <string name="ir">Empezar</string>
+    <string name="txtTituloMeta">Selecciona tu meta</string>
+    <string name="txtSubTituloMeta">Ingresa tu nombre</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="regresar">Regresar</string>
+    <string name="Fin">Finalizar</string>
+
+    <string name="reducir">Reducir grasa corporal</string>
+    <string name="mantener">Mantener peso saludable</string>
+    <string name="aumentar">Aumentar masa muscular</string>
+
+    <string name="actividades">Hr.activ.sedentarias</string>
+    <string name="ejercicio">Hr.activ.fisica</string>
+
+
+    <string name="sueno">Horas sueno en la noche</string>
+
+
+    <string name="tituloPref">Selecciona tus preferencias alimentarias</string>
+    <string name="alimento">Que alimentos no comes</string>
+    <string name="TituloMenu">Menu personalizado de comidas</string>
+    <string name="tipos">Tipos</string>
+    <string name="finalizar">Finalizar</string>
+
+
+
+</resources>
