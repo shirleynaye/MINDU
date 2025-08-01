@@ -28,7 +28,7 @@
 | 0.4.0   | 27 de julio 2025 | Inclusión de la pantalla de emociones con sugerencias dinámicas.                    |
 | 0.5.0   | 28 de julio 2025 | Incorporación del journaling estructurado y almacenamiento local.                   |
 | 0.6.0   | 30 de julio 2025 | Sección educativa sobre mindfulness con animación integrada desde LottieFiles.      |
-| 0.7.0   | 31 de agosto 2025 | Ajustes visuales, validación de navegación y preparación para la entrega final.    |
+| 0.7.0   | 31 de julio 2025 | Ajustes visuales, validación de navegación y preparación para la entrega final.     |
 
 ---
 
