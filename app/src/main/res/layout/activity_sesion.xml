@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootSesion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliceblue"
+    tools:context="ec.repositoriocompartido.MINDUApp.SesionActivity">
+
+    <ImageView
+        android:id="@+id/logoSesion"
+        android:layout_width="164dp"
+        android:layout_height="44dp"
+        android:src="@drawable/logo_mindu_gen"
+        android:contentDescription="Logo"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="!HOLA!"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toBottomOf="@id/logoSesion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="48sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvHintPin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="78dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloSesion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="INTRODUCE EL CODIGO DE ACCESO"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <!-- Contenedor horizontal para los 4 dígitos (PIN) -->
+    <LinearLayout
+        android:id="@+id/pinContainerSesion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="78dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHintPin">
+
+        <EditText
+            android:id="@+id/pin1"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="1"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/pin2"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="1"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/pin3"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="1"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/pin4"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="1"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"/>
+    </LinearLayout>
+
+    <!-- Texto explicativo / hint (opcional) -->
+
+
+    <!-- Campo usuario (nombre/email según uses) -->
+    <EditText
+        android:id="@+id/etUsuarioSesion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="78dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginTop="24dp"
+        android:hint="Ingrese el nombre de usuario"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@color/white"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pinContainerSesion" />
+
+    <!-- Botón Iniciar Sesión (centrado abajo) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUsuarioSesion"
+        >
+
+        <Button
+            android:id="@+id/btnEmpezarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:text="Iniciar Sesión"
+            android:textSize="25sp"
+            android:backgroundTint="@color/violet"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

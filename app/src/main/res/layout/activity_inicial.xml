@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootInicial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ec.repositoriocompartido.MINDUApp.InicialActivity">
+
+    <!-- Imagen pegada superior izquierda -->
+    <ImageView
+        android:id="@+id/imgTopLeft"
+        android:layout_width="148dp"
+        android:layout_height="38dp"
+        android:contentDescription="logo izquierda"
+        android:src="@drawable/logo_mindu_gen"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <!-- Imagen pegada superior derecha -->
+    <ImageView
+        android:id="@+id/imgTopRight"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:contentDescription="logo derecha"
+        android:src="@drawable/avatar1"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="20dp" />
+
+    <!-- Scrollable area: NestedScrollView -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:layout_marginTop="43dp"
+        app:layout_constraintTop_toBottomOf="@id/imgTopLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Hijo del ScrollView: debe ser match_parent / wrap_content -->
+        <LinearLayout
+            android:id="@+id/columnImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="16dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <!-- Imagen grande 1 -->
+            <ImageView
+                android:id="@+id/large1"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/escribir"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+                android:background="@drawable/avatar_bg_selector"
+            android:contentDescription="imagen grande 1"/>
+
+            <!-- Imagen grande 2 -->
+            <ImageView
+                android:id="@+id/large2"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/mindfulness"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:contentDescription="imagen grande 2"/>
+
+            <!-- Imagen grande 3 -->
+            <ImageView
+                android:id="@+id/large3"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/educacion"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:contentDescription="imagen grande 3"/>
+
+            <!-- Imagen grande 4 -->
+            <ImageView
+                android:id="@+id/large4"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/inapiracion"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:contentDescription="imagen grande 4"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
