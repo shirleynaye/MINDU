@@ -79,5 +79,5 @@ Los esquemas iniciales fueron diseñados en base a una estructura minimalista, a
 7. **Perfil/Mi cuenta:** opciones de personalización (avatar, PIN, diseño).
 8. 
 Puedes consultar el documento completo de los wireframes aquí:  
-📄 [Ver Wireframes de MINDU (PDF)](docs/pantallas_mindu.pdf)
+📄 [Ver Wireframes de MINDU (PDF)](drawable/pantallas_mindu.pdf)
 
