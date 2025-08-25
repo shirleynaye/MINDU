@@ -77,7 +77,6 @@ Los esquemas iniciales fueron diseñados en base a una estructura minimalista, a
 5. **Ejercicios de respiración:** animación visual con instrucciones.  
 6. **Blog educativo:** lista de artículos sobre mindfulness.  
 7. **Perfil/Mi cuenta:** opciones de personalización (avatar, PIN, diseño).
-8. 
 
 ## Wireframes y Pantallas
 
