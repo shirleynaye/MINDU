@@ -78,6 +78,9 @@ Los esquemas iniciales fueron diseñados en base a una estructura minimalista, a
 6. **Blog educativo:** lista de artículos sobre mindfulness.  
 7. **Perfil/Mi cuenta:** opciones de personalización (avatar, PIN, diseño).
 8. 
-Puedes consultar el documento completo de los wireframes aquí:  
-📄 [Ver Wireframes de MINDU (PDF)](drawable/pantallas_mindu.pdf)
+
+## Wireframes y Pantallas
+
+📄 [Ver pantallas de MINDU (PDF)](app/src/main/res/drawable/pantallas_mindu.pdf)
+
 
